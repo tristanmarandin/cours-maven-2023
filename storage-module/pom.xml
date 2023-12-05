@@ -8,7 +8,7 @@
     Le tag group id n'est pas obligatoire ici car le groupId est déjà défini par le parent
     <groupId>fr.imt.cours.IL-Maven-2023</groupId>
     -->
-    <artifactId>coffee-machine</artifactId>
+    <artifactId>storage-module</artifactId>
     <version>1.0-SNAPSHOT</version>
 
     <parent>
@@ -20,7 +20,7 @@
     <properties>
         <cucumber.version>7.8.1</cucumber.version>
         <junit.version>5.9.1</junit.version>
-        <jdk.version>21</jdk.version>
+        <jdk.version>18</jdk.version>
     </properties>
 
     <build>
@@ -151,6 +151,5 @@
             <scope>test</scope>
         </dependency>
     </dependencies>
-
 
 </project>
