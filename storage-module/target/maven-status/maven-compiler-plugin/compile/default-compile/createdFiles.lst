@@ -1,0 +1,11 @@
+fr\imt\cours\IL\Maven\storage\cupboard\container\Mug.class
+fr\imt\cours\IL\Maven\storage\cupboard\container\Container.class
+fr\imt\cours\IL\Maven\storage\cupboard\container\Cup.class
+fr\imt\cours\IL\Maven\storage\cupboard\FabricCupboardContainer.class
+fr\imt\cours\IL\Maven\storage\cupboard\exception\ExceptionContainerCreation.class
+fr\imt\cours\IL\Maven\storage\cupboard\container\CoffeeCup.class
+fr\imt\cours\IL\Maven\storage\cupboard\exception\CupNotEmptyException.class
+fr\imt\cours\IL\Maven\Main.class
+fr\imt\cours\IL\Maven\storage\cupboard\container\CoffeeContainer.class
+fr\imt\cours\IL\Maven\storage\cupboard\container\CoffeeMug.class
+fr\imt\cours\IL\Maven\storage\cupboard\coffee\type\CoffeeType.class

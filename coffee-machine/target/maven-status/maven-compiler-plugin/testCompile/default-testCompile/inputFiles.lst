@@ -1,5 +1,12 @@
-C:\Users\trist\Documents\S9\Model Driven Engineering\cours-maven-2023\coffee-machine\src\test\java\fr\imt\coffee\machine\cucumber\steps\CucumberStepsExpressoCoffeeMachineTest.java
-C:\Users\trist\Documents\S9\Model Driven Engineering\cours-maven-2023\coffee-machine\src\test\java\fr\imt\coffee\machine\component\ElectricalResistanceTest.java
-C:\Users\trist\Documents\S9\Model Driven Engineering\cours-maven-2023\coffee-machine\src\test\java\fr\imt\coffee\machine\CoffeeMachineCucumberFunctionalTest.java
-C:\Users\trist\Documents\S9\Model Driven Engineering\cours-maven-2023\coffee-machine\src\test\java\fr\imt\coffee\machine\CoffeeMachineUnitTest.java
-C:\Users\trist\Documents\S9\Model Driven Engineering\cours-maven-2023\coffee-machine\src\test\java\fr\imt\coffee\machine\cucumber\steps\CucumberStepsCoffeeMachineMakeACoffeeTest.java
+C:\Users\trist\Documents\S9\Model Driven Engineering\cours-maven-2023\coffee-machine\src\test\java\fr\imt\cours\IL\Maven\machine\component\SteamPipeTest.java
+C:\Users\trist\Documents\S9\Model Driven Engineering\cours-maven-2023\coffee-machine\src\test\java\fr\imt\cours\IL\Maven\machine\CoffeeMachineUnitTest.java
+C:\Users\trist\Documents\S9\Model Driven Engineering\cours-maven-2023\coffee-machine\src\test\java\fr\imt\cours\IL\Maven\machine\component\BeanTankTest.java
+C:\Users\trist\Documents\S9\Model Driven Engineering\cours-maven-2023\coffee-machine\src\test\java\fr\imt\cours\IL\Maven\machine\component\TankTest.java
+C:\Users\trist\Documents\S9\Model Driven Engineering\cours-maven-2023\coffee-machine\src\test\java\fr\imt\cours\IL\Maven\machine\cucumber\steps\CucumberStepsCoffeeMachineMakeACoffeeTest.java
+C:\Users\trist\Documents\S9\Model Driven Engineering\cours-maven-2023\coffee-machine\src\test\java\fr\imt\cours\IL\Maven\machine\EspressoCoffeeMachineUnitTest.java
+C:\Users\trist\Documents\S9\Model Driven Engineering\cours-maven-2023\coffee-machine\src\test\java\fr\imt\cours\IL\Maven\machine\component\CoffeeGrinderTest.java
+C:\Users\trist\Documents\S9\Model Driven Engineering\cours-maven-2023\coffee-machine\src\test\java\fr\imt\cours\IL\Maven\machine\component\WaterPumpTest.java
+C:\Users\trist\Documents\S9\Model Driven Engineering\cours-maven-2023\coffee-machine\src\test\java\fr\imt\cours\IL\Maven\machine\CoffeeMachineCucumberFunctionalTest.java
+C:\Users\trist\Documents\S9\Model Driven Engineering\cours-maven-2023\coffee-machine\src\test\java\fr\imt\cours\IL\Maven\machine\component\ElectricalResistanceTest.java
+C:\Users\trist\Documents\S9\Model Driven Engineering\cours-maven-2023\coffee-machine\src\test\java\fr\imt\cours\IL\Maven\machine\component\WaterTankTest.java
+C:\Users\trist\Documents\S9\Model Driven Engineering\cours-maven-2023\coffee-machine\src\test\java\fr\imt\cours\IL\Maven\machine\cucumber\steps\CucumberStepsExpressoCoffeeMachineTest.java

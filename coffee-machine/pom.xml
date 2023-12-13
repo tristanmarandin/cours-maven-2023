@@ -12,7 +12,7 @@
     <version>1.0-SNAPSHOT</version>
 
     <parent>
-        <groupId>fr.imt.cours.IL-Maven-2023</groupId>
+        <groupId>fr.imt.cours.IL.Maven</groupId>
         <artifactId>cours-maven-2023</artifactId>
         <version>1.0-SNAPSHOT</version>
     </parent>
@@ -20,7 +20,7 @@
     <properties>
         <cucumber.version>7.8.1</cucumber.version>
         <junit.version>5.9.1</junit.version>
-        <jdk.version>21</jdk.version>
+        <jdk.version>19.0.2</jdk.version>
     </properties>
 
     <build>
@@ -31,8 +31,8 @@
                 <artifactId>maven-compiler-plugin</artifactId>
                 <version>3.10.1</version>
                 <configuration>
-                    <source>${jdk.version}</source>
-                    <target>${jdk.version}</target>
+                    <source>19</source>
+                    <target>19</target>
                 </configuration>
             </plugin>
             <!-- Plugin To run unit test -->
@@ -40,17 +40,23 @@
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-surefire-plugin</artifactId>
                 <version>3.0.0-M7</version>
+                <configuration>
+                    <useModulePath>false</useModulePath>
+                </configuration>
             </plugin>
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-antrun-plugin</artifactId>
+                <version>3.1.0</version>
                 <executions>
                     <execution>
                         <id>createThriftDir</id>
                         <phase>test</phase>
                         <configuration>
                             <tasks>
+                                <!--suppress UnresolvedMavenProperty -->
                                 <delete dir="${env.HOME}/jacoco"/>
+                                <!--suppress UnresolvedMavenProperty -->
                                 <mkdir dir="${env.HOME}/jacoco"/>
                             </tasks>
                         </configuration>
@@ -65,8 +71,9 @@
                 <!-- https://mvnrepository.com/artifact/org.jacoco/jacoco-maven-plugin -->
                 <groupId>org.jacoco</groupId>
                 <artifactId>jacoco-maven-plugin</artifactId>
-                <version>0.8.8</version>
+                <version>0.8.11</version>
                 <configuration>
+                    <!--suppress UnresolvedMavenProperty -->
                     <outputDirectory>${env.HOME}/jacoco</outputDirectory>
                     <append>true</append>
                 </configuration>
@@ -89,10 +96,11 @@
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-assembly-plugin</artifactId>
+                <version>2.2-beta-5</version>
                 <configuration>
                     <archive>
                         <manifest>
-                            <mainClass>fr.imt.coffee.MainCoffee</mainClass>
+                            <mainClass>fr.imt.cours.IL.Maven.MainCoffee</mainClass>
                         </manifest>
                     </archive>
                     <descriptorRefs>
@@ -113,42 +121,28 @@
     </build>
 
     <dependencies>
-        <!-- JUnit 5 dependency -->
-        <dependency>
-            <groupId>org.junit.jupiter</groupId>
-            <artifactId>junit-jupiter-api</artifactId>
-            <version>${junit.version}</version>
-        </dependency>
-        <dependency>
-            <groupId>org.junit.vintage</groupId>
-            <artifactId>junit-vintage-engine</artifactId>
-            <version>${junit.version}</version>
-            <scope>test</scope>
-        </dependency>
-        <!-- Mockito dependency -->
         <dependency>
             <groupId>org.mockito</groupId>
-            <artifactId>mockito-core</artifactId>
-            <version>4.8.0</version>
-        </dependency>
-        <!-- Hamcrest dependency -->
-        <dependency>
-            <groupId>org.hamcrest</groupId>
-            <artifactId>hamcrest</artifactId>
-            <version>2.2</version>
+            <artifactId>mockito-inline</artifactId>
+            <version>3.4.0</version>
             <scope>test</scope>
         </dependency>
         <dependency>
-            <groupId>io.cucumber</groupId>
-            <artifactId>cucumber-java</artifactId>
-            <version>${cucumber.version}</version>
+            <groupId>org.mockito</groupId>
+            <artifactId>mockito-junit-jupiter</artifactId>
+            <version>5.3.1</version>
             <scope>test</scope>
         </dependency>
         <dependency>
-            <groupId>io.cucumber</groupId>
-            <artifactId>cucumber-junit</artifactId>
-            <version>${cucumber.version}</version>
-            <scope>test</scope>
+            <groupId>org.apache.curator</groupId>
+            <artifactId>curator-framework</artifactId>
+            <version>5.0.0</version> <!-- Use the appropriate version -->
+        </dependency>
+        <dependency>
+            <groupId>fr.imt.cours.IL.Maven</groupId>
+            <artifactId>storage-module</artifactId>
+            <version>1.0-SNAPSHOT</version>
+            <scope>compile</scope>
         </dependency>
     </dependencies>
 

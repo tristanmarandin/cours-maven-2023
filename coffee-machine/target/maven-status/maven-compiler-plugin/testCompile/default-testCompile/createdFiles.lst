@@ -1,5 +1,12 @@
-fr\imt\coffee\machine\cucumber\steps\CucumberStepsCoffeeMachineMakeACoffeeTest.class
-fr\imt\coffee\machine\component\ElectricalResistanceTest.class
-fr\imt\coffee\machine\cucumber\steps\CucumberStepsExpressoCoffeeMachineTest.class
-fr\imt\coffee\machine\CoffeeMachineCucumberFunctionalTest.class
-fr\imt\coffee\machine\CoffeeMachineUnitTest.class
+fr\imt\cours\IL\Maven\machine\component\TankTest.class
+fr\imt\cours\IL\Maven\machine\cucumber\steps\CucumberStepsExpressoCoffeeMachineTest.class
+fr\imt\cours\IL\Maven\machine\component\ElectricalResistanceTest.class
+fr\imt\cours\IL\Maven\machine\component\CoffeeGrinderTest.class
+fr\imt\cours\IL\Maven\machine\component\WaterTankTest.class
+fr\imt\cours\IL\Maven\machine\component\BeanTankTest.class
+fr\imt\cours\IL\Maven\machine\CoffeeMachineUnitTest.class
+fr\imt\cours\IL\Maven\machine\cucumber\steps\CucumberStepsCoffeeMachineMakeACoffeeTest.class
+fr\imt\cours\IL\Maven\machine\EspressoCoffeeMachineUnitTest.class
+fr\imt\cours\IL\Maven\machine\component\WaterPumpTest.class
+fr\imt\cours\IL\Maven\machine\CoffeeMachineCucumberFunctionalTest.class
+fr\imt\cours\IL\Maven\machine\component\SteamPipeTest.class

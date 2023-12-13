@@ -12,7 +12,7 @@
     <version>1.0-SNAPSHOT</version>
 
     <parent>
-        <groupId>fr.imt.cours.IL-Maven-2023</groupId>
+        <groupId>fr.imt.cours.IL.Maven</groupId>
         <artifactId>cours-maven-2023</artifactId>
         <version>1.0-SNAPSHOT</version>
     </parent>
@@ -20,7 +20,7 @@
     <properties>
         <cucumber.version>7.8.1</cucumber.version>
         <junit.version>5.9.1</junit.version>
-        <jdk.version>18</jdk.version>
+        <jdk.version>19.0.2</jdk.version>
     </properties>
 
     <build>
@@ -31,8 +31,8 @@
                 <artifactId>maven-compiler-plugin</artifactId>
                 <version>3.10.1</version>
                 <configuration>
-                    <source>${jdk.version}</source>
-                    <target>${jdk.version}</target>
+                    <source>19</source>
+                    <target>19</target>
                 </configuration>
             </plugin>
             <!-- Plugin To run unit test -->
@@ -50,7 +50,9 @@
                         <phase>test</phase>
                         <configuration>
                             <tasks>
+                                <!--suppress UnresolvedMavenProperty -->
                                 <delete dir="${env.HOME}/jacoco"/>
+                                <!--suppress UnresolvedMavenProperty -->
                                 <mkdir dir="${env.HOME}/jacoco"/>
                             </tasks>
                         </configuration>
@@ -92,7 +94,7 @@
                 <configuration>
                     <archive>
                         <manifest>
-                            <mainClass>fr.imt.coffee.MainCoffee</mainClass>
+                            <mainClass>fr.imt.cours.IL.Maven.MainCoffee</mainClass>
                         </manifest>
                     </archive>
                     <descriptorRefs>
@@ -111,45 +113,5 @@
             </plugin>
         </plugins>
     </build>
-
-    <dependencies>
-        <!-- JUnit 5 dependency -->
-        <dependency>
-            <groupId>org.junit.jupiter</groupId>
-            <artifactId>junit-jupiter-api</artifactId>
-            <version>${junit.version}</version>
-        </dependency>
-        <dependency>
-            <groupId>org.junit.vintage</groupId>
-            <artifactId>junit-vintage-engine</artifactId>
-            <version>${junit.version}</version>
-            <scope>test</scope>
-        </dependency>
-        <!-- Mockito dependency -->
-        <dependency>
-            <groupId>org.mockito</groupId>
-            <artifactId>mockito-core</artifactId>
-            <version>4.8.0</version>
-        </dependency>
-        <!-- Hamcrest dependency -->
-        <dependency>
-            <groupId>org.hamcrest</groupId>
-            <artifactId>hamcrest</artifactId>
-            <version>2.2</version>
-            <scope>test</scope>
-        </dependency>
-        <dependency>
-            <groupId>io.cucumber</groupId>
-            <artifactId>cucumber-java</artifactId>
-            <version>${cucumber.version}</version>
-            <scope>test</scope>
-        </dependency>
-        <dependency>
-            <groupId>io.cucumber</groupId>
-            <artifactId>cucumber-junit</artifactId>
-            <version>${cucumber.version}</version>
-            <scope>test</scope>
-        </dependency>
-    </dependencies>
 
 </project>
